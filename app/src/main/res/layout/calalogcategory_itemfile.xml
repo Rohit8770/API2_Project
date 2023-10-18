@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/ad1"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"
+        android:background="@color/light_black"
+        android:layout_marginTop="@dimen/_5sdp" />
+
+    <TextView
+        android:id="@+id/txCatalogCategory"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginTop="@dimen/_1ssp"
+        android:background="@color/bg_grey"
+        android:padding="@dimen/_1ssp"
+        android:text="Category"
+        android:textColor="@color/red1"
+        android:textSize="@dimen/_19sdp"
+        android:textStyle="bold" />
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"
+        android:background="@color/light_black"
+        android:layout_marginTop="@dimen/_1sdp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvCatalogCategory"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

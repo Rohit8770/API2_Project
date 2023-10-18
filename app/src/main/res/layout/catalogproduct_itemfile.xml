@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   android:padding="@dimen/_4sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_15ssp"
+        android:backgroundTint="@color/ad2"
+        android:elevation="@dimen/_10ssp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_10ssp"
+        android:layout_marginTop="@dimen/_144sdp"
+        android:elevation="@dimen/_10ssp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.67"
+            android:orientation="vertical"
+            android:background="@color/ss_border">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="pro_name:->"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="@dimen/_10sdp"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="price:->"
+                android:textStyle="bold"
+                android:layout_marginLeft="35sp"
+                android:textColor="@color/black"
+
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                tools:ignore="MissingConstraints" />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Description:->"
+                android:textStyle="bold"
+                android:layout_marginLeft="5sp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.30"
+            android:orientation="vertical"
+            android:background="@color/white">
+            <TextView
+                android:id="@+id/txCataName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="10sp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/currency_rupee_24"
+                android:layout_marginLeft="@dimen/_10ssp"
+                android:layout_marginTop="@dimen/_16ssp"/>
+            <TextView
+                android:id="@+id/txCataPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint= "Price"
+                android:textStyle="italic"
+                android:textSize="@dimen/_16sdp"
+                android:layout_marginTop="-28sp"
+                android:layout_marginLeft="36dp"/>
+            <TextView
+                android:id="@+id/txCataDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Description"
+                android:textStyle="italic"
+                android:textSize="17sp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginLeft="@dimen/_10sdp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+            <ImageView
+                android:id="@+id/imgProVeg"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginTop="10sp"
+                android:layout_marginLeft="@dimen/_200sdp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10sp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10ssp"
+            android:elevation="10sp">
+    <ImageView
+        android:id="@+id/imgCataProduct"
+        android:layout_width="214dp"
+        android:layout_height="164dp"/>
+        </androidx.cardview.widget.CardView>
+
+  <!--  <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"
+        android:background="@color/light_black"
+        android:layout_marginTop="@dimen/_5sdp"
+        />-->
+
+
+
+    <!--<View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"
+        android:background="@color/light_black"
+        android:layout_marginTop="@dimen/_142sdp"
+        />-->
+
+
+   <!-- <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"
+        android:background="@color/light_black"
+        android:layout_marginTop="@dimen/_239sdp"
+        />-->
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

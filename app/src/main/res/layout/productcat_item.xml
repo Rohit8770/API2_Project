@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:elevation="10sp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:backgroundTint="@color/light_purple"
+            app:cardCornerRadius="15dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="-14sp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="________________________________________________"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="111sp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="__________________________________________________________"/>
+
+            <ImageView
+                android:layout_width="@dimen/_110sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_marginLeft="@dimen/_10ssp"
+                android:id="@+id/imgPro11"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Producr_Name"
+                android:textColorHint="@color/black"
+                android:id="@+id/txName11"
+                android:textColor="@color/black"
+                android:layout_marginLeft="210sp"
+                android:layout_marginTop="4sp"
+                android:textSize="25sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Price"
+                android:textColorHint="@color/black"
+                android:id="@+id/txPrice11"
+                android:layout_marginLeft="210sp"
+                android:layout_marginTop="42sp"
+                android:textSize="25sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                android:hint="Description"
+                android:textColorHint="@color/black"
+                android:id="@+id/txDesc11"
+                android:layout_marginLeft="210sp"
+                android:layout_marginTop="66sp"
+                android:textSize="22sp"/>
+
+
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</LinearLayout>

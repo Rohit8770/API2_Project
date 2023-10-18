@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:padding="55sp"
+    android:background="@drawable/newone"
+    tools:context=".Cat_and_Sub.Sub_Category.Outpotsub2.SubAddActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:layout_marginTop="145sp"
+
+        app:cardCornerRadius="15sp"
+        android:elevation="10sp">
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:layout_width="match_parent"
+            android:id="@+id/spinnerAdd"
+            android:layout_marginRight="15sp"
+            android:layout_marginLeft="15sp"
+            android:gravity="center"
+            android:layout_marginTop="10sp"
+            android:layout_height="wrap_content"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80sp"
+        android:background="@color/ss_medium_grey"
+        app:cardCornerRadius="10sp"
+        android:elevation="10sp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etvName1"
+            android:hint="Text"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            style="@style/MyEditTextTheam"
+            android:textColor="@color/black"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/btnAddon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:text="Add"
+        android:textSize="20sp"/>
+
+
+
+
+</LinearLayout>

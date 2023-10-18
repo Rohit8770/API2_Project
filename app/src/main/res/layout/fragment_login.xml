@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="@dimen/_25sdp"
+    tools:context=".Cat_and_Sub.User.Fragment1.LoginFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="15sp"
+        android:layout_marginTop="35sp"
+        app:cardCornerRadius="20sp">
+   <EditText
+       android:id="@+id/etEmail"
+       android:layout_width="match_parent"
+       android:padding="10sp"
+       android:singleLine="true"
+       android:layout_height="wrap_content"
+       android:background="@color/ad2"
+       android:hint="Email"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="15sp"
+        android:layout_marginTop="25sp"
+        app:cardCornerRadius="20sp">
+        <EditText
+            android:id="@+id/etPass"
+            android:layout_width="match_parent"
+            android:padding="10sp"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            android:background="@color/ad2"
+            android:layout_height="wrap_content"
+            android:hint="Password"/>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:textSize="22sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25sp"
+        android:text="Submit"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="30sp"
+
+        android:text="Forget_Password"/>
+
+
+
+</LinearLayout>

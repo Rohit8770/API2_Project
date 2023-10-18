@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15sp"
+    android:background="@drawable/todatimg"
+    android:orientation="vertical"
+    tools:context=".Cat_and_Sub.Category.Output.ReturnDataActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginTop="30sp"
+        android:background="@color/ss_border"
+        android:elevation="15sp"
+        app:cardCornerRadius="20sp">
+        <ImageView
+            android:layout_width="44dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="5sp"
+            android:background="@color/white"
+            android:src="@drawable/search_24" />
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_marginStart="35sp"
+            android:layout_marginEnd="35sp"
+            android:layout_marginLeft="15sp"
+            android:layout_marginBottom="35sp"
+            android:background="@color/white"
+            android:hint="Search_bar"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_400sdp"
+        android:background="@color/ss_border"
+        android:elevation="15sp"
+        android:backgroundTint="@color/skyblue"
+        android:layout_marginTop="120sp"
+        app:cardCornerRadius="20sp">
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/rcvData"
+        android:padding="10sp"
+        android:layout_marginLeft="5sp"
+        android:layout_height="wrap_content" />
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:layout_marginLeft="285sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="655sp"
+        android:textSize="40sp"
+        android:text="+"
+        android:textStyle="bold" />
+</RelativeLayout>

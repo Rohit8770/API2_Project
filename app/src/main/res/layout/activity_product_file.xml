@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/tint1"
+    android:layout_height="match_parent"
+    tools:context=".Cat_and_Sub.Product.ProductFileActivity">
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/CatSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_20sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/_20sdp"/>
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/SubSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_20sdp"
+        app:layout_constraintTop_toBottomOf="@+id/CatSpinner"
+        android:layout_marginTop="@dimen/_20sdp"/>
+    <EditText
+        android:id="@+id/etSearchProduct"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        app:layout_constraintTop_toBottomOf="@id/SubSpinner"
+        android:background="@color/light1"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        android:hint="Type to Search"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:singleLine="true"
+        android:textColorHint="@color/white"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:drawablePadding="@dimen/_10sdp"
+        android:textColor="@color/white"
+        android:drawableStart="@drawable/search_24"/>
+    <ImageView
+        android:id="@+id/ivClose"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/_93sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:src="@drawable/ic_white_close"/>
+    <TextView
+        android:id="@+id/NoData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No Data"
+        android:textSize="@dimen/_20sdp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/etSearchProduct"
+        android:layout_marginTop="@dimen/_50sdp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvProduct"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_125sdp"
+        android:layout_height="match_parent" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnAddition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add"
+        android:backgroundTint="@color/white"
+        android:layout_gravity="end"
+        android:layout_margin="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:maxImageSize="@dimen/_30sdp"/>
+
+
+
+
+
+
+
+
+
+
+   <!-- <androidx.appcompat.widget.AppCompatSpinner
+        android:layout_width="match_parent"
+        android:layout_marginTop="20sp"
+        android:background="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="210sp"
+        android:id="@+id/CatSpinner"/>
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:background="@color/white"
+        android:layout_height="wrap_content"
+       android:layout_marginLeft="200sp"
+        android:id="@+id/SubSpinner"/>
+   &lt;!&ndash; <LinearLayout
+        android:layout_width="140sp"
+        android:layout_marginLeft="210sp"
+        android:layout_marginTop="@dimen/_169sdp"
+        android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:id="@+id/SubSpinner"/>
+    </LinearLayout>&ndash;&gt;
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginTop="80sp"
+        android:background="@color/ss_border"
+        android:elevation="15sp"
+        app:cardCornerRadius="20sp">
+        <ImageView
+            android:layout_width="44dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="5sp"
+            android:background="@color/white"
+            android:src="@drawable/search_24" />
+        <EditText
+            android:id="@+id/etSearchProduct"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_marginStart="35sp"
+            android:layout_marginEnd="35sp"
+            android:layout_marginLeft="15sp"
+            android:layout_marginBottom="35sp"
+            android:background="@color/white"
+            android:hint="Search_bar"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="450sp"
+        app:cardCornerRadius="15sp"
+        android:backgroundTint="@color/light_purple"
+        android:elevation="10sp"
+        android:layout_marginTop="170sp">
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/proSwap"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_450sdp"
+            android:layout_below="@+id/ProSearchbar"
+            tools:ignore="NotSibling">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcvProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="200sp" />
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15sp"
+        android:layout_marginLeft="270sp"
+        android:layout_marginTop="650sp"
+        android:elevation="10sp">
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnAddition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:textColor="@color/black"
+        android:layout_below="@+id/rcvProduct"
+        android:textSize="15sp"
+        android:text="Add"
+        android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="italic"
+        android:layout_marginTop="670dp"
+        android:layout_marginLeft="50sp"
+        android:textColor="@color/light1"
+        android:text="AddProduct:-&#45;&#45;&#45;&#45;&ndash;&gt;"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="italic"
+        android:layout_marginTop="682dp"
+        android:layout_marginLeft="45sp"
+        android:textColor="@color/light1"
+        android:text="-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/noDataFoundView"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No data found"
+        android:gravity="center"
+        />
+-->
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

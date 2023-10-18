@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.API_Project" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.API_Project" parent="Base.Theme.API_Project" />
+
+    <style name="MyEditTextTheam">
+        <item name="android:background">#F8F6DB</item>
+        <item name="android:textSize">@dimen/_25sdp</item>
+        <item name="android:padding">@dimen/_10sdp</item>
+        <item name="android:textColorHint">@color/blue</item>
+    </style>
+
+    <style name="MyButtonTheam">
+        <item name="android:background">#F8F6DB</item>
+        <item name="android:textSize">@dimen/_20sdp</item>
+        <item name="android:padding">@dimen/_10sdp</item>
+        <item name="android:textColorHint">@color/black</item>
+    </style>
+</resources>

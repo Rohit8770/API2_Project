@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15sp"
+    android:background="@drawable/newone"
+    android:orientation="vertical"
+    tools:context=".Cat_and_Sub.Sub_Category.Outpotsub2.ResultSubActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:layout_marginTop="45sp"
+        android:padding="10sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        app:cardCornerRadius="15sp"
+        android:elevation="10sp">
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:layout_width="match_parent"
+            android:id="@+id/subspinnerDropdown"
+            android:layout_marginRight="15sp"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="10sp"
+            android:layout_height="wrap_content"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350sp"
+        android:layout_height="50sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="140sp"
+        android:background="@color/ss_border"
+        android:elevation="15sp"
+        app:cardCornerRadius="20sp">
+        <ImageView
+            android:layout_width="44dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="5sp"
+            android:background="@color/white"
+            android:src="@drawable/search_24" />
+        <EditText
+            android:id="@+id/subsearchbar"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_marginStart="35sp"
+            android:layout_marginEnd="35sp"
+            android:layout_marginLeft="15sp"
+            android:layout_marginBottom="35sp"
+            android:background="@color/white"
+            android:hint="Search_bar"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="450sp"
+        app:cardCornerRadius="15sp"
+        android:backgroundTint="@color/orange"
+        android:elevation="10sp"
+        android:layout_marginTop="200sp">
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/subSwap"
+            android:layout_width="wrap_content"
+            android:layout_height="406dp"
+            android:layout_below="@+id/subsearchbar"
+            tools:ignore="NotSibling">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/subrcv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="300sp" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/subbtnpluse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:layout_marginLeft="285sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="665sp"
+        android:textSize="40sp"
+        android:text="+"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

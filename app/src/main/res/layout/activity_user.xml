@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/light1"
+    tools:context=".Cat_and_Sub.User.Activity1.UserActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="370sp"
+        android:elevation="@dimen/_1sdp"
+        android:layout_marginTop="-100sp"
+        app:cardCornerRadius="@dimen/_50sdp">
+
+        <ImageView
+            android:layout_width="76dp"
+            android:layout_height="72dp"
+            android:background="@color/white"
+            android:padding="7sp"
+            android:layout_marginLeft="165sp"
+            android:layout_marginTop="165sp"
+            android:src="@drawable/person" />
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="250sp"
+            android:layout_marginLeft="160sp"
+            android:textSize="23sp"
+            android:hint="Welcome"/>
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="290sp"
+            android:layout_marginLeft="40sp"
+            android:textSize="18sp"
+            android:hint="Welcome"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/light1"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/yellow"
+        app:tabIndicatorHeight="3dp"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextColor="@color/white"
+        tools:ignore="MissingConstraints" >
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="0dp"
+        android:layout_marginTop="7dp"/>
+
+</LinearLayout>

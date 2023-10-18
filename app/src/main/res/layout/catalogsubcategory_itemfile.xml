@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5sp"
+        android:layout_marginRight="@dimen/_40ssp"
+        android:layout_marginLeft="@dimen/_10ssp"
+        android:elevation="5sp">
+    <TextView
+        android:id="@+id/txCatalogSubCategory"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@color/orange"
+        android:hint="Sub_Category"
+        android:padding="@dimen/_8ssp"
+        android:textColorHint="@color/black"
+        android:textSize="@dimen/_12sdp"
+        tools:ignore="MissingConstraints" />
+    </androidx.cardview.widget.CardView>
+    <ImageView
+        android:id="@+id/imgDropDown"
+        android:layout_width="@dimen/_26sdp"
+        android:layout_marginRight="15sp"
+        android:layout_height="@dimen/_26sdp"
+        android:src="@drawable/drop_down_24"
+       app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/_2sdp"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvCatalogProduct"
+        android:layout_marginTop="@dimen/_3ssp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/imgDropDown"
+
+      />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

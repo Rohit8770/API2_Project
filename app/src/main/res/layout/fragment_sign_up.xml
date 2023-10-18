@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="35sp"
+    android:orientation="vertical"
+    tools:context=".Cat_and_Sub.User.Fragment1.SignUpFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="15sp"
+        android:layout_marginTop="15sp"
+        app:cardCornerRadius="20sp">
+        <EditText
+            android:id="@+id/etFirst"
+            android:layout_width="match_parent"
+            android:padding="10sp"
+            android:singleLine="true"
+            android:layout_height="wrap_content"
+            android:background="@color/ad2"
+            android:hint="First_Name"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="15sp"
+        android:layout_marginTop="85sp"
+        app:cardCornerRadius="20sp">
+        <EditText
+            android:id="@+id/etLast"
+            android:layout_width="match_parent"
+            android:padding="10sp"
+            android:background="@color/ad2"
+            android:singleLine="true"
+            android:layout_height="wrap_content"
+            android:hint="Last_Name"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="15sp"
+        android:layout_marginTop="140sp"
+        app:cardCornerRadius="20sp">
+        <EditText
+            android:id="@+id/etMail1"
+            android:layout_width="match_parent"
+            android:padding="10sp"
+            android:background="@color/ad2"
+            android:singleLine="true"
+            android:layout_height="wrap_content"
+            android:hint="Email_Address"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="15sp"
+        android:layout_marginTop="200sp"
+        app:cardCornerRadius="20sp">
+        <EditText
+            android:id="@+id/etPass1"
+            android:layout_width="match_parent"
+            android:padding="10sp"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:background="@color/ad2"
+            android:layout_height="wrap_content"
+            android:hint="Password"/>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnSave1"
+        android:layout_width="match_parent"
+        android:textSize="22sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="265sp"
+        android:text="Submit"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="350sp"
+        android:text="Forget_Password"/>
+
+    </RelativeLayout>
+</ScrollView>
